@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <html>
 <head>
 </head>
@@ -6,8 +12,14 @@
 
 <h1>Nintendo 64 Games</h1>
 <hr>
-<h2>Create an Account</h2>
 
+
+	<?php
+	
+	if(!isset($_SESSION["loggedin"])) {
+	
+	echo '
+	<h2>Create an Account</h2>
 	<form action="" method="post">
 		<span>Username:</span>
 		<br>
@@ -22,7 +34,11 @@
 		<input type="text" name="creationEmail">
 		<br><br>
 		<input type="submit" name="submit">
-	</form>
+	</form>';
+	
+	}
+	
+	?>
 	
 	<?php
 	
@@ -65,13 +81,17 @@
 		
 			if ($creationUsernameValidation == true && $creationPasswordValidation == true && $creationEmailValidation == true) {
 				
-				// include 'connection.php';
+				include 'connection.php';
+				
+				/*
 				
 				$server = "students.cah.ucf.edu";
 				$username = "ca631855";
 				$password = "Abcdef1@";
 				$databaseName = "ca631855";
 
+				*/
+				
 				$connection = mysqli_connect("$server", "$username", "$password", "$databaseName") or die('Error');
 				
 				$sql = "INSERT INTO userpass (Username, Password, Email) VALUES ('$userArray[0]', sha1('$userArray[1]'), '$userArray[2]')";
@@ -89,9 +109,35 @@
 	
 	?>
 	
-	<br><hr>
+	<?php
 	
+	if(!isset($_SESSION["loggedin"])) {
+	
+	echo '
+	<br><hr>
 	<h2>Login</h2>
+	<form action="loginValidation.php" method="post">
+		<span>Username:</span>
+		<br>
+		<input type="text" name="loginUsername">
+		<br><br>
+		<span>Password:</span>
+		<br>
+		<input type="text" name="loginPassword">
+		<br><br>
+		<input type="submit">
+	</form>';
+	}
+	
+	?>
+	
+	<?php
+		
+		if(isset($_SESSION["loggedin"])) {
+			echo 'You are currently logged in.';
+		}
+		
+	?>
 	
 </body>
 </html>
