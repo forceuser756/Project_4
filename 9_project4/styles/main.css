@@ -1,39 +1,46 @@
 @import "normalize.css";
 
-.content{
+body {
+  height: 50%;
+    width: 60%;
 
+    background-image: url("https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg");
 }
 
-.header{
-
-
+h1, h2 {
+  color: White;
+  text-align: left;
 }
 
-.main-nav{
-
-
+p {
+  color: White;
 }
 
-.main-nav li{
-    float: right;
+table, td,  th {
+    border: 1px solid white;
+    border-collapse: collapse;
 }
 
-.main-nav li a{
-
+td, th {
+    width: 200px;
 }
 
-.main-nav li.active a{
-
+th {
+  color: White;
 }
 
-.main-nav li a:hover{
-
+td {
+  color: White;
 }
 
-.main-nav .icon{
-
+a {
+  color: White;
 }
 
-@media screen and (max-width: 600px){
-    
+.code {
+  color: White;
+}
+
+li {
+  color: White;
 }
