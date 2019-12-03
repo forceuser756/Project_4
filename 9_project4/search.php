@@ -1,6 +1,6 @@
 <?php
 
-// This is the login page
+// This is the search page
 
 session_start();
 
@@ -53,28 +53,25 @@ session_start();
 		</ul>
 	</div>
 	
+	<h2>Search</h2>
+	
+	<form action="" method="post">
+		<input type="text" name="search">
+		<br><br>
+		<input type="submit" name="submit">
+	</form>
+	
 	<?php
 	
-	if(!isset($_SESSION["loggedin"])) {
-	
-		echo '
-		<h2>Login</h2>
-		<form action="loginValidation.php" method="post">
-			<span>Username:</span>
-			<br>
-			<input type="text" name="loginUsername">
-			<br><br>
-			<span>Password:</span>
-			<br>
-			<input type="text" name="loginPassword">
-			<br><br>
-			<input type="submit">
-		</form>';
-	} else {
-		echo '<br>You are logged in.';
-	}
-	
-	?>
+		// include "connection.php";
+
+		if(isset($_POST['submit'])) {
 		
+			
+		
+		}
+		
+	?>
+	
 </body>
 </html>

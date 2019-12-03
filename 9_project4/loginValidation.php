@@ -1,5 +1,7 @@
 <?php
 
+// This validates login information
+
 session_start();
 
 $loginUsername = $_POST["loginUsername"];
