@@ -3,21 +3,136 @@
 body {
   height: 50%;
     width: 60%;
+}
+.content
+{
+  width: 100%;
+  height: auto;
+  background: transparent;
+  margin: auto;
+}
+.header
+{
+  background-color: rgba(0,0,0,0.5);
+  width: 500%;
+  height: 100px;
 
-    background-image: url("https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg");
+}
+.main-nav
+{
+  width: 100%;
+  height: 100px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+.main-nav li
+{
+  float: left;
 }
 
+.main-nav li a
+{
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 5px 30px;
+  font-size: 18px;
+  line-height: 95px;
+  padding-right: 35px;
+}
+
+.main-nav li.active a
+{
+  border: 0px solid white;
+}
+
+.main-nav li a:hover
+{
+  border: 0px solid beige;
+  background-color: rgba(0,0,0,0.2);
+}
+
+.background{
+  height: 600%;
+  width: 600%;
+  background-color: rgba(238, 238, 238, 0.81);
+  background-blend-mode: color;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg");
+}
+
+.subSection{
+  max-height: 100%;
+  height: 400px;
+  width: 100%;
+  background-color: transparent;
+  column-count: 3;
+  display: table;
+}
+
+.form-signin
+{
+  max-width: 500px;
+  padding: 0px auto;
+  margin: 0px auto;
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox
+{
+  margin-bottom: 30px;
+}
+
+.form-signin .checkbox
+{
+  font-weight: normal;
+}
+
+.form-signin .form-control
+{
+  position: relative;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.form-signin input[type="text"]
+{
+  margin-bottom: 10px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: black;
+  position: relative;
+}
+
+.form-signin input[type="password"]
+{
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-color: black;
+}
 h1, h2 {
-  color: White;
+  color: Black;
   text-align: left;
 }
 
 p {
-  color: White;
+  color: Black;
 }
 
 table, td,  th {
-    border: 1px solid white;
+    border: 3px solid black;
     border-collapse: collapse;
 }
 
@@ -26,21 +141,21 @@ td, th {
 }
 
 th {
-  color: White;
+  color: Black;
 }
 
 td {
-  color: White;
+  color: Black;
 }
 
 a {
-  color: White;
+  color: Black;
 }
 
 .code {
-  color: White;
+  color: Black;
 }
 
 li {
-  color: White;
+  color: Black;
 }

@@ -1,49 +1,52 @@
-<head>
-  <title>Nintendo 64 Database</title>
-</head>
-
-<body>
-  <h1>Nintendo 64 Database</h1>
-  <p>Listed below are all games from the Nintendo 64
-  </p>
-  <p>
-  That's pretty 90s, I thought, so I decided to make a website which celebrates the best of 1990s website design.
-  </p>
-
+<?php
+require "loginValidation.php";
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Nintendo 64 Database</title>
+        <link href="styles/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="content">
+            <div class="header">
+                <div class="main-nav">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="gamedatabase.php">Games</a></li>
+                    <li><a href="userinfo.php">Account Info</a></li>
+                    <li><a href="logout.php">Logout</a></li>
+                </div>
+            </div>
+            <div class="background">
+                <div class="subSection">
+                    <h1>Nintendo 64 Database</h1>
+                    <h2><?php echo date("m/d/Y"); ?></h2>
+                </div>
+                <div class="subSection">
+  <p>Listed below are all games from the Nintendo 64</p>
+  <div class="form=signin">
+      <form method="post" action="accountValidation.php">
   <table>
     <tr>
-      <th>Feature</th>
-      <th>Method</th>
-      <th>Result</th>
+      <th>Game</th>
+      <th>Publisher</th>
+      <th>Image</th>
+      <th>Favorites</th>
     </tr>
     <tr>
-      <td>Awesome starfield background</td>
-      <td>Link to an image I uploaded to tinypic using the <b class="code">background-image:</b> CSS property</td>
-      <td><img src="https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg" width=200></td>
+      <td>007: The World Is Not Enough</td>
+      <td>Electronic Arts</td>
+      <td><img src="https://images.launchbox-app.com/b2e94fbd-9b03-4b3a-b5be-3a497fc56ada.jpg" width=200></td>
     </tr>
     <tr>
-      <td>Overuse of animated gifs</td>
-      <td>Link to an image on tinypic using html img tab</td>
-      <td><img src="https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg" width=200></td>
+      <td>1080º Snowboarding</td>
+      <td>Nintendo</td>
+      <td><img src="https://images.launchbox-app.com/baa77dac-dfdc-47d9-bcf6-32c32113ade8.jpg" width=200></td>
     </tr>
     <tr>
-      <td>Non-standard hyperlink colour</td>
-      <td>Set the colour of the a element using the <b class="code">color: </b>CSS property</td>
-      <td><img src="https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg" width=200</td>
-    </tr>
-    <tr>
-      <td>Syntax Highlighting for CSS</td>
-      <td>Using the "Code" CSS class to highlight code elements with a different colour.</td>
-      <td><img src="http://i50.tinypic.com/nd3atd.jpg" width=200></td>
+      <td>40 Winks</td>
+      <td>Eurocom</td>
+      <td><img src="https://images.launchbox-app.com/96977e70-0f18-45d3-8298-8f42df3e4b8b.jpg" width=200></td>
     </tr>
   </table>
-
-  <h2>Still to do</h2>
-
-  <ul>
-    <li>Keeping the background still while the text scrolls</li>
-    <ul>
-      <li>A working hit counter that looks like this: <img src="http://i44.tinypic.com/x6bthc.jpg"></li>
-      <li>or this: <img src="http://i49.tinypic.com/2udw42c.jpg"</li>
-    </ul>
-  </ul>
