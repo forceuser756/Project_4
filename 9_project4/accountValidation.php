@@ -1,5 +1,5 @@
 <?php
-require "config.php";
+require "connection.php";
 
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
@@ -22,7 +22,7 @@ function error($error) {
 
   if(!isset($_POST['username']) ||
       !isset($_POST['password']) ||
-       !isset($_POST['email']) {
+       !isset($_POST['email'])) {
       error('There seems to be errors with your submission.');
   }
 

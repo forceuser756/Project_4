@@ -29,5 +29,7 @@ require "connection.php";
                             <input name="submit" id="submit" type="submit" value="Create Account"/><br/>
                         </form>
                 </div>
+            </div>
+        </div>
             </body>
         </html>

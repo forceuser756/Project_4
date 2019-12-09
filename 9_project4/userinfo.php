@@ -2,6 +2,7 @@
 require "loginValidation.php";
 ?>
 <!DOCTYPE html>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -24,7 +25,8 @@ require "loginValidation.php";
                     <h2><?php echo date("m/d/Y"); ?></h2>
                 </div>
                 <div class="subSection">
-                    <?php $query=$mysqli->query("SELECT * FROM userinfo");
+                    <?php $query="" 
+                    $query=$mysqli->query("SELECT * FROM userinfo");
                     if ($result = $mysqli->query($query)){
                         while ($row = $result->fetch_assoc()) {
                             $username = $row["col2"];
