@@ -33,14 +33,12 @@ require "loginValidation.php";
               <input name="title" id="title" type="text"/><br/><br/>
               <label for="year">Year:</label>
               <input name="year" id="year" type="text"/><br/><br/>
-              <label for="developer">Developer:</label>
-              <input name="developer" id="developer" type="text"/><br/><br/>
               <label for="publisher">Publisher:</label>
               <input name="publisher" id="publisher" type="text"/><br/><br/>
-              <label for="region">Region:</label>
-              <input name="region" id="region" type="text"/><br/><br/>
               <label for="genre">Genre:</label>
               <input name="genre" id="genre" type="text"/><br/><br/>
+              <label for="image">Image Link:</label>
+              <input name="image" id="image" type="text"/><br/><br/>
               <input name="submit" id="submit" type="submit" value="Insert Game"/><br/>
           </form>
       </div>
@@ -62,28 +60,26 @@ require "loginValidation.php";
             $_SESSION["lastsearch"] = $search_value;
 
             define('db_server', 'students.cah.ucf.edu');
-            define('db_username', 'ca631855');
-            define('db_password', 'abcdef1@');
-            define('db_database', 'ca631855');
+            define('db_username', 'tr303872');
+            define('db_password', 'digF0ssum!');
+            define('db_database', 'tr303872');
             $conn = mysqli_connect(db_server, db_username, db_password, db_database);
 
             if($conn === false){
               die("ERROR: Could not connect. " . mysqli_connect_error());
             }
 
-			$sql="select * from games where title like '%$search_value%'"; // games, Title
+			$sql="select * from gameinfo where title like '%$search_value%'"; // games, Title
 
 			$res=$conn->query($sql);
 
 			while($row=$res->fetch_assoc()){
                 echo "<table>";
                 echo "<tr>";
-                echo "<td>" . $row['Title'] . "</td>";
-                echo "<td>" . $row['Year'] . "</td>";
-                echo "<td>" . $row['Developer'] . "</td>";
-                echo "<td>" . $row['Publisher'] . "</td>";
-                echo "<td>" . $row['Region'] . "</td>";
-                echo "<td>" . $row['Genre'] . "</td>";
+                echo "<td>" . $row['title'] . "</td>";
+                echo "<td>" . $row['year'] . "</td>";
+                echo "<td>" . $row['publisher'] . "</td>";
+                echo "<td>" . $row['genre'] . "</td>";
                 echo "<td>" . "<img src=" . $row['image'] . " width=200>" . "</td>";
                 echo "</tr>";
                 echo "</table>";
