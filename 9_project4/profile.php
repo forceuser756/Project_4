@@ -1,6 +1,6 @@
 <?php
 
-// This is the search page
+// This is the profile page
 
 session_start();
 
@@ -53,33 +53,7 @@ session_start();
 		</ul>
 	</div>
 	
-	<h2>Search</h2>
-	
-	<form action="" method="post">
-		<input type="text" name="search">
-		<br><br>
-		<input type="submit" name="submit">
-	</form>
-		
-	<?php
-
-		if(isset($_POST['submit'])) {
-			
-			$search_value=$_POST["search"];
-		
-			include 'connection.php';
-			
-			$sql="select * from games where Title like '%$search_value%'"; // games, Title
-			
-			$res=$connection->query($sql);
-			
-			while($row=$res->fetch_assoc()){
-            echo '<br><br>Game:  '.$row["Title"].'<br>Year:  '.$row["Year"].'<br>Developer:  '.$row["Developer"].'<br>Publisher:  '.$row["Publisher"].'<br>Region:  '.$row["Region"].'<br>Genre:  '.$row["Genre"];
-			}
-		
-		}
-		
-	?>
+	<h2>Profile</h2>
 	
 </body>
 </html>

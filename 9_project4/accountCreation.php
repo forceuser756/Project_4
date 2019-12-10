@@ -49,7 +49,7 @@ session_start();
 			<li><a href="index.php">Login</a></li>
 			<li><a href="accountCreation.php">Account Creation</a></li>
 			<li><a href="search.php">Search</a></li>
-			<li><a href="www.google.com">Profile</a></li>
+			<li><a href="profile.php">Profile</a></li>
 		</ul>
 	</div>
 
