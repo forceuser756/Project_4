@@ -67,6 +67,8 @@ session_start();
 			
 			$search_value=$_POST["search"];
 		
+			$_SESSION["lastsearch"] = $search_value;
+		
 			include 'connection.php';
 			
 			$sql="select * from games where Title like '%$search_value%'"; // games, Title

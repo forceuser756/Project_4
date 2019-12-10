@@ -18,7 +18,7 @@ $rows = mysqli_num_rows($query);
 
 if($rows == 1) {
 		
-	$_SESSION["loggedin"] = "This is a test.";
+	$_SESSION["loggedin"] = $loginUsername;
 	
 	if(isset($_SESSION["notloggedin"])) {
 		unset($_SESSION["notloggedin"]);
