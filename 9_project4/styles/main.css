@@ -10,13 +10,11 @@ body {
   height: auto;
   background: transparent;
   margin: auto;
-  background-color: rgba(238, 238, 238, 0.81);
-  background-image: url("https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg");
 }
 .header
 {
   background-color: rgba(0,0,0,0.5);
-  width: 100%;
+  width: 500%;
   height: 100px;
 
 }
@@ -59,9 +57,9 @@ body {
 }
 
 .background{
-  height: 600%;
-  width: 100%;
-  background-color: rgba(238, 238, 238, 0.81);
+  height: 100%;
+  width: 600%;
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: color;
   background-repeat: repeat;
   background-position: center;
@@ -73,10 +71,9 @@ body {
   max-height: 100%;
   height: 400px;
   width: 100%;
-  background-color: rgba(238, 238, 238, 0.81);
+  background-color: transparent;
   column-count: 3;
   display: table;
-  background-image: url("https://res.cloudinary.com/teepublic/image/private/s--ecodLK39--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1565157970/production/designs/5535408_0.jpg");
 }
 
 .form-signin
@@ -126,12 +123,12 @@ body {
   border-color: black;
 }
 h1, h2 {
-  color: Black;
+  color: White;
   text-align: left;
 }
 
 p {
-  color: Black;
+  color: White;
 }
 
 table, td,  th {
@@ -144,26 +141,25 @@ td, th {
 }
 
 th {
-  color: Black;
+  color: White;
 }
 
 td {
-  color: Black;
-  align-content: center;
-}
-
-label {
-
+  color: White;
 }
 
 a {
-  color: Black;
+  color: White;
+}
+
+label {
+    color: white;
 }
 
 .code {
-  color: Black;
+  color: White;
 }
 
 li {
-  color: Black;
+  color: White;
 }
