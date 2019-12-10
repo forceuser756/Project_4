@@ -8,7 +8,7 @@ $genre = $_POST['genre'];
 $image = $_POST['image'];
 
 
-$sql ="INSERT INTO gameinfo (title, year, publisher, genre, image) VALUES ('$title', '$year', '$publisher', '$genre', '$image')";
+$sql ="INSERT INTO games (Title, Year, Developer, Publisher, Region, Genre) VALUES ('$title', '$year', '$publisher', '$genre', '$image')";
 if (mysqli_query($conn, $sql)){
   echo "Game Created and Entered Into Database";
 }

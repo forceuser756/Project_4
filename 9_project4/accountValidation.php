@@ -35,7 +35,7 @@ if(strlen($error_message) > 0) {
   error($error_message);
 }
 
-$sql ="INSERT INTO userinfo (username, password, email) VALUES ('$username', '$password', '$email')";
+$sql ="INSERT INTO userpass (Username, Password, Email) VALUES ('$username', '$password', '$email')";
 if (mysqli_query($conn, $sql)){
   echo "User Created and Entered Into Database";
 }
